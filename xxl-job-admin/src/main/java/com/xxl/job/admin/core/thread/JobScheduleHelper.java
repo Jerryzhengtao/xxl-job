@@ -33,7 +33,7 @@ public class JobScheduleHelper {
     private Thread ringThread;
     private volatile boolean scheduleThreadToStop = false;
     private volatile boolean ringThreadToStop = false;
-    private static final AtomicReferenceArray<List<Integer>> ringData = new AtomicReferenceArray<List<Integer>>(new List[60]);
+    private static final AtomicReferenceArray<List<Integer>> ringData = new AtomicReferenceArray<>(60);
 
     public void start(){
 
